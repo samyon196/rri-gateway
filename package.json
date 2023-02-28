@@ -1,0 +1,14 @@
+{
+  "name": "rri-gateway",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dist": "npx npm run dist:tag && npx npm run dist:image",
+    "dist:tag": "npm version patch && git push && git push --tags",
+    "dist:image": "docker build -t samyon196/rri-app-gw:$npm_package_version ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
