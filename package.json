@@ -6,7 +6,7 @@
   "scripts": {
     "dist": "npx npm run dist:tag && npx npm run dist:image",
     "dist:tag": "npm version patch && git push && git push --tags",
-    "dist:image": "docker build -t samyon196/rri-app-gw:$npm_package_version ."
+    "dist:image": "docker build -t samyon196/rri-gateway:$npm_package_version ."
   },
   "keywords": [],
   "author": "",
